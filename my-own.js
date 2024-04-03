@@ -10,15 +10,6 @@ let board = [
 // using let because the variable is expected to change from 'X' to 'O' and back
 let playerTurn = 'X';
 
-// is a function that print the current status of the board using the variable - board
-const printBoard = () => {
-  console.log('   0  1  2');
-  console.log('0 ' + board[0].join(' | '));
-  console.log('  ---------');
-  console.log('1 ' + board[1].join(' | '));
-  console.log('  ---------');
-  console.log('2 ' + board[2].join(' | '));
-}
 
 const horizontalWin = () => {
   for (let i=0;i<3;i++) {
@@ -55,10 +46,6 @@ const checkForWin = () => {
 
 const ticTacToe = (row, column) => {
   board[row][column] = playerTurn
-
-  
-  // Your code here to place a marker on the board
-  // then check for a win
 }
 
 const swapTurn = () => {
