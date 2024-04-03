@@ -79,8 +79,9 @@ const ticTacToe = (row, column) => {
 
 const handleClick = (selected) => {
   console.log("hello")
+  selected = selected.split("-")
   console.log(selected)
-  console.log(selected.charAt(0))
+  // console.log(selected.charAt(0))
 }
 
 const getPrompt = () => {
